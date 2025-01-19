@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'TieleFont';
+    src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BodyFont';
+    src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3e5d8;
+    font-family: 'BodyFont', sans-serif;
+    line-height: 1.6;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container{
+    background-color: #ffffff;
+    text-align: left;
+    max-width: 800px;
+    border-radius: 10px;
+    padding:40px;
+    margin:5px;
+}
+
+.recipe-image{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.container h1 {
+    font-family: 'TitleFont', sans-serif;
+    margin:15px 0;
+}
+
+.container p {
+    color: #a29e9c;
+    margin: 10px 0;
+}
+
+.preparation-time {
+    background-color: #fff7fc;
+    color: #9d6b82;
+    line-height: 2;
+    display: block;
+    border-radius: 8px;
+    padding:20px 30px;
+    margin:20px 0px;
+}
+
+.preparation-time h2 {
+    color: #7b2b4c;
+}
+
+/* 列表样式 */
+.preparation-time ul {
+    list-style-type: disc;
+    /* 使用圆点符号 */
+    margin: 0;
+    padding-left: 18px;
+    /* 设置列表项缩进距离 */
+}
+
+li {
+    color: #333333d8;
+    /* 黑色文字 */
+    margin-bottom: 8px;
+    /* 列表项之间的间距 */
+    font-size: 16px;
+    line-height: 1.5;
+
+}
+
+/* 自定义圆点的颜色 */
+.preparation-time ul li::marker {
+    color: #7b2b4c;
+
+}
+
+.ingredients h2,
+.instructions h2,
+.nutrition h2{
+    color:#9c7867;
+    margin:20px 0px;
+
+}
+
+.ingredients ul,
+.instructions ol{
+    padding-left:25px;
+}
+
+.instructions ol li::marker,
+.ingredients ul li::marker {
+    color: #9c7867;
+    font-weight:800;
+}
+
+.line {
+    height: 1px;
+    /* 线条高度 */
+    background-color: #e4e4e4;
+    /* 线条颜色 */
+    margin: 20px 0;
+    /* 上下留白调整线条位置 */
+}
+.nutrition p{
+    margin-bottom: 15px;
+}
+
+/* 表格整体样式 */
+.nutrition-table {
+    width: 100%;
+    /* 让表格宽度占满容器 */
+    border-collapse: collapse;
+    /* 去掉单元格之间的间距 */
+    font-family: Arial, sans-serif;
+    /* 设置表格的字体 */
+    text-align: left;
+    /* 左对齐 */
+    margin-top: 20px;
+    /* 表格上方的间距 */
+}
+
+/* 表头和单元格的通用样式 */
+.nutrition-table th,
+.nutrition-table td {
+    padding: 8px 15px;
+    /* 单元格内边距 */
+    font-size: 16px;
+    /* 字体大小 */
+}
+
+/* 表头样式 */
+.nutrition-table th {
+    font-weight: 500;
+    /* 加粗表头 */
+    color: #a29e9c;
+    /* 深棕色字体 */
+}
+
+/* 单元格样式 */
+.nutrition-table td {
+    color: #9c7867;
+    /* 深棕色字体 */
+    font-weight: bold;
+    /* 加粗字体 */
+}
+
+/* 行底部分隔线 */
+.nutrition-table tr {
+    border-bottom: 1px solid #ccc;
+    /* 每行底部分隔线 */
+}
+
+/* 去掉最后一行的分隔线 */
+.nutrition-table tr:last-child {
+    border-bottom: none;
+}
+
+.attribution{
+    text-align: center;
+    color:#a29e9c;
+}
+
+.attribution a{
+    color:#9d6b82
+}
+
