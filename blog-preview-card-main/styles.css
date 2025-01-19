@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Figtree', sans-serif;
+    background-color: #f5d04e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 10px 10px 0px black;
+    max-width: 375px;
+    padding: 20px;
+
+}
+
+.card {
+    overflow: hidden;
+    text-align: left;
+}
+
+/* Card Content */
+.card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px
+}
+
+.label {
+    background-color: hsl(48, 94%, 68%);
+    /* 标签背景色 */
+    color: #000000;
+    /* 文本白色 */
+    font-size: 1;
+    font-weight: bold;
+    display: block;
+    width: 92px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+
+.time {
+    color: hsl(0, 0%, 0%);
+    font-size: 0.8rem;
+    margin: 10px 0;
+}
+
+.title {
+    color: hsl(0, 0%, 0%);
+    font-size: 1.2rem;
+    font-weight: 750;
+    margin: 18px 0;
+}
+
+.title:hover  {
+    color: #f5d668;
+
+}
+
+.description {
+    color: hsl(0, 0%, 40%);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Publisher整体布局 */
+.publisher {
+    display: flex;
+    /* Flex布局 */
+    justify-content: flex-start;
+    /* 内容靠左对齐 */
+    align-items: center;
+    /* 垂直居中对齐 */
+    margin-top: 20px;
+}
+
+/* Figure布局 */
+.publisher-figure {
+    display: flex;
+    /* 将图片和文字水平排列 */
+    align-items: center;
+    /* 垂直居中 */
+    gap: 10px;
+    /* 图片和文字之间的间距 */
+    margin: 0;
+    /* 去掉figure的默认margin */
+}
+
+/* 图片样式 */
+.avatar {
+    width: 40px;
+    /* 固定图片宽度 */
+    height: 40px;
+    /* 固定图片高度 */
+    border-radius: 50%;
+    /* 圆形头像 */
+    margin-right: 10px;
+}
+
+/* 名字样式 */
+.author {
+    /* 设置字体大小 */
+    font-weight: bold;
+    /* 加粗文字 */
+    color: hsl(0, 0%, 0%);
+}
+
+@media (max-width: 375px) {
+    .card {
+        max-width: 90%;
+        /* 在小屏幕上卡片最大宽度为屏幕的 90% */
+    }
+}
