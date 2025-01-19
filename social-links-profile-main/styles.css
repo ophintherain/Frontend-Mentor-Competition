@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: #141414;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    border-radius: 10px;
+    max-width: 560px;
+    padding:20px 30px;
+    text-align: center;
+    background-color: #1f1f1f;
+}
+
+.photo {
+    width:32%;
+    border-radius: 50%;
+    margin:15px;
+}
+
+.name {
+    margin: 5px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #fdfdfd;
+}
+
+.address {
+    margin: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #bae53b;
+}
+
+.bio {
+    margin:24px;
+    font-size: 14px;
+    font-weight: 50;
+    color: #fdfdfd5c;
+}
+
+.social-media{
+    background-color: #333333;
+    border-radius: 5px;
+    height: 40px;
+    padding: 12px;
+    margin: 12px;
+    color: #fdfdfd;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.social-media:hover {
+    background-color: #bae53b;
+    border-radius: 5px;
+    height: 40px;
+    padding: 12px;
+    margin: 12px;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.attribution{
+    font-size: 12px;
+    margin:10px;
+    color:#fdfdfd
+}
+
+.attribution a{
+    color:#bae53b
+}
+
+@media (max-width: 560px) {
+    .card {
+        max-width: 90%;
+        padding: clamp(10px, 5vw, 20px);
+        /* 根据屏幕宽度动态调整内边距 */
+    }
+
+    .name {
+        font-size: clamp(18px, 5vw, 25px);
+        /* 动态调整字体大小 */
+        margin: clamp(5px, 3vw, 10px);
+        /* 动态调整边距 */
+    }
+
+    .address {
+        font-size: clamp(12px, 4vw, 14px);
+        margin: clamp(5px, 3vw, 10px);
+    }
+
+    .bio {
+        font-size: clamp(8px, 4vw, 14px);
+        margin: clamp(12px, 5vw, 24px);
+    }
+
+    .social-media {
+        font-size: clamp(12px, 4vw, 14px);
+        margin: clamp(8px, 4vw, 12px);
+        height: clamp(30px, 6vw, 40px);
+    }
+    .social-media:hover {
+        font-size: clamp(12px, 4vw, 14px);
+        margin: clamp(8px, 4vw, 12px);
+        height: clamp(30px, 6vw, 40px);
+        }
+}
